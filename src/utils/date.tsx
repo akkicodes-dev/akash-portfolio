@@ -1,6 +1,12 @@
 export function formatedDateMonthYear(currentDate: string) {
-  const [day, month, year] = currentDate.split("/").map(Number);
+  if (!currentDate || currentDate === "Present") return "Present";
+
+  const parts = currentDate.split("/").map(Number);
+  if (parts.length !== 3 || parts.some((n) => Number.isNaN(n))) return "Present";
+
+  const [day, month, year] = parts;
   const date = new Date(year, month - 1, day);
+  if (isNaN(date.getTime())) return "Present";
 
   return new Intl.DateTimeFormat("en-US", {
     month: "short",
@@ -9,8 +15,14 @@ export function formatedDateMonthYear(currentDate: string) {
 }
 
 export function formatedDate(currentDate: string) {
-  const [day, month, year] = currentDate.split("/").map(Number);
+  if (!currentDate || currentDate === "Present") return "Present";
+
+  const parts = currentDate.split("/").map(Number);
+  if (parts.length !== 3 || parts.some((n) => Number.isNaN(n))) return "Present";
+
+  const [day, month, year] = parts;
   const date = new Date(year, month - 1, day);
+  if (isNaN(date.getTime())) return "Present";
 
   return new Intl.DateTimeFormat("en-US", {
     month: "short",
@@ -20,8 +32,23 @@ export function formatedDate(currentDate: string) {
 }
 
 export function getCompactDuration(startStr: string, endStr: string): string {
-  const [, startMonth, startYear] = startStr.split("/").map(Number);
-  const [, endMonth, endYear] = endStr.split("/").map(Number);
+  const startParts = startStr.split("/").map(Number);
+  let endParts = endStr === "Present" || !endStr ? null : endStr.split("/").map(Number);
+
+  if (startParts.length !== 3 || startParts.some((n) => Number.isNaN(n))) return "";
+
+  const [, startMonth, startYear] = startParts;
+
+  let endMonth: number;
+  let endYear: number;
+
+  if (!endParts || endParts.length !== 3 || endParts.some((n) => Number.isNaN(n))) {
+    const now = new Date();
+    endMonth = now.getMonth() + 1;
+    endYear = now.getFullYear();
+  } else {
+    [, endMonth, endYear] = endParts;
+  }
 
   const totalStartMonths = startYear * 12 + (startMonth - 1);
   const totalEndMonths = endYear * 12 + (endMonth - 1);
