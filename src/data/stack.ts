@@ -4,13 +4,13 @@ export interface StackInterface {
 }
 
 export const stack: StackInterface[] = [
-  { name: "Android", color: "emerald" },
+  { name: "android", color: "emerald" },
   { name: "Kotlin", color: "sky" },
-  { name: "Java", color: "amber" },
-  { name: "Xml", color: "violet" },
+  { name: "java", color: "amber" },
+  { name: "xml", color: "violet" },
   // { name: "Jetpack_Compose", color: "cyan" },
-  { name: "Firebase", color: "orange" },
-  { name: "Blockchain", color: "purple" },
-  { name: "Solidity", color: "yellow" },
-  { name: "Github", color: "slate" },
+  { name: "firebase", color: "orange" },
+  { name: "blockchain", color: "purple" },
+  { name: "solidity", color: "yellow" },
+  { name: "github", color: "slate" },
 ];
