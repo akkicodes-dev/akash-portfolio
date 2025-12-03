@@ -21,36 +21,37 @@ export interface EducationInterface {
   experiences: Array<EducationExperience>;
 }
 
-export const educations = [
+export const educations: EducationInterface[] = [
   {
-    title: "Bachelor of Science in Computer Science",
-    abbreviation: "B.Sc.",
+    title: "Bachelor of Engineering in Computer Engineering",
+    abbreviation: "B.E.",
     university: {
-      name: "Federal University of Ouro Preto",
-      originalName: "Universidade Federal de Ouro Preto",
-      abbreviation: "UFOP",
-      image: "/educations/ufop_logo.webp",
+      name: "PDEA's College of Engineering, Manjari",
+      originalName: "Pune District Education Association's College of Engineering",
+      abbreviation: "PDEA COEM",
+      image: "/educations/pdea_logo.webp", // Make sure to add this image to your assets
     },
-    start: "01/08/2018",
-    end: "01/04/2025",
+    // Estimated based on your current 3rd-year status in late 2025
+    start: "01/08/2023", 
+    end: "01/06/2027", 
     experiences: [
       {
-        role: "Teaching Assistant – Data Structures",
-        start: "01/09/2019",
-        end: "01/03/2020",
-        description: `Supported the Data Structures course by creating exercises, reviewing assignments, and assisting students with coding challenges. Topics included algorithm complexity, recursion, lists, stacks, queues, sorting algorithms, binary and AVL trees, and hash tables.`,
+        role: "Student Lead – CodeLite 2.0 Hackathon",
+        start: "01/08/2025",
+        end: "Present",
+        description: `Lead organizer for the 'CodeLite 2.0' national-level hackathon. Spearheaded sponsorship outreach, drafted official communications, and coordinated with corporate partners to secure funding and support for the event.`,
       },
       {
-        role: "Undergraduate Research – High Performance Computing (HPC)",
-        start: "01/08/2019",
-        end: "01/09/2019",
-        description: `Contributed to the development of JCL-Opt, a Java-based framework that applies optimization techniques like backtracking and permutations on distributed systems using JCL. Focused on modular design, load balancing, and efficient data handling strategies.`,
+        role: "Smart India Hackathon (SIH) Aspirant",
+        start: "01/09/2025",
+        end: "Present",
+        description: `Evaluated and developed project proposals for SIH, specifically focusing on 'Women Safety Analytics' and 'Conversational Image Recognition Chatbots'. Worked on architectural planning and feasibility analysis for these problem statements.`,
       },
       {
-        role: "Participant – opCod3rs Program",
-        start: "31/08/2018",
-        end: "28/06/2019",
-        description: `Took part in a competitive programming training program aimed at preparing students for algorithmic challenges and ICPC-style contests. Regularly practiced advanced data structures, dynamic programming, and graph theory through weekly problem-solving sessions.`,
+        role: "Android Developer & Competitive Programmer",
+        start: "01/01/2024",
+        end: "Present",
+        description: `Actively learning Kotlin and Jetpack Compose for modern Android development. Concurrently practicing competitive programming on LeetCode to strengthen data structure and algorithm skills.`,
       },
     ],
   },

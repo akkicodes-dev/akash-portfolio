@@ -11,21 +11,21 @@ const poppinsSans = Poppins({
 
 export const metadata: Metadata = {
   title: {
-    default: "Matheus Almeida - Software Engineer Front End",
-    template: "%s | Matheus Almeida",
+    default: "Akash Satao - Software Developer | React, Next.js, Tailwind",
+    template: "%s | Akash Satao",
   },
   description:
     "Software Engineer Front-End specialized in Vue, React, TypeScript, Tailwind, Node.js and Firebase. I transform ideas into modern, accessible, and high-performance digital experiences.",
-  authors: [{ name: "Matheus Almeida", url: "https://almeida-matheus.com" }],
-  creator: "Matheus Almeida",
-  publisher: "Matheus Almeida",
-  metadataBase: new URL("https://almeida-matheus.com"),
+  authors: [{ name: "Akash Satao", url: "https://akashsatao.vercel.app" }],
+  creator: "Akash Satao",
+  publisher: "Akash Satao",
+  metadataBase: new URL("https://akashsatao.vercel.app"),
   robots: {
     index: true,
     follow: true,
   },
   keywords: [
-    "Matheus Almeida",
+    "Akash Satao",
     "Frontend",
     "Software Engineer",
     "Desenvolvedor Frontend",
@@ -49,11 +49,11 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title:
-      "Matheus Almeida - Software Engineer Front End | Vue, React, Tailwind",
+      "Akash Satao - Software Engineer Front End | Vue, React, Tailwind",
     description:
       "Software Engineer Front-End specialized in Vue, React, TypeScript, Tailwind, Node.js and Firebase. I transform ideas into modern, accessible, and high-performance digital experiences.",
-    url: "https://almeida-matheus.com",
-    siteName: "Matheus Almeida",
+    url: "https://akashsatao.vercel.app",
+    siteName: "Akash Satao",
     locale: "en_US",
     type: "website",
   },
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
   },
   category: "technology",
   classification: "Software Engineer",
-  applicationName: "Matheus Almeida Portfolio",
+  applicationName: "Akash Satao Portfolio",
   verification: {
     google: "zLhULd-U4o_BOSFwid6TZQZacqB-hte1fgytIbGqVMY",
   },
