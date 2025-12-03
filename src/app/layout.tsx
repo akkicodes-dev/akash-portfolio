@@ -11,11 +11,11 @@ const poppinsSans = Poppins({
 
 export const metadata: Metadata = {
   title: {
-    default: "Akash Satao - Software Developer | React, Next.js, Tailwind",
+    default: "Akash Satao - Software Developer Android Developer",
     template: "%s | Akash Satao",
   },
   description:
-    "Software Engineer Front-End specialized in Vue, React, TypeScript, Tailwind, Node.js and Firebase. I transform ideas into modern, accessible, and high-performance digital experiences.",
+    "Software Engineer Android Developer specialized in Vue, React, TypeScript, Tailwind, Node.js and Firebase. I transform ideas into modern, accessible, and high-performance digital experiences.",
   authors: [{ name: "Akash Satao", url: "https://akashsatao.vercel.app" }],
   creator: "Akash Satao",
   publisher: "Akash Satao",
@@ -49,9 +49,9 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title:
-      "Akash Satao - Software Engineer Front End | Vue, React, Tailwind",
+      "Akash Satao - Software Engineer Android Developer",
     description:
-      "Software Engineer Front-End specialized in Vue, React, TypeScript, Tailwind, Node.js and Firebase. I transform ideas into modern, accessible, and high-performance digital experiences.",
+      "Software Engineer Android Developer specialized in Vue, React, TypeScript, Tailwind, Node.js and Firebase. I transform ideas into modern, accessible, and high-performance digital experiences.",
     url: "https://akashsatao.vercel.app",
     siteName: "Akash Satao",
     locale: "en_US",

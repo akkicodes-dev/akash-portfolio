@@ -25,7 +25,7 @@ export default function CoverSection() {
             <div className="flex flex-col items gap-6 sm:block w-full sm:w-auto pt-10 sm:pt-0">
               <div className="flex flex-col select-none items-center sm:items-start">
                 <Title className="font-normal">Software Engineer</Title>
-                <Title>Front-End</Title>
+                <Title>Android Developer</Title>
               </div>
 
               <AnimatedComponent
