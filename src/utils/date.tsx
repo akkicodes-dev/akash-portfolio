@@ -33,7 +33,7 @@ export function formatedDate(currentDate: string) {
 
 export function getCompactDuration(startStr: string, endStr: string): string {
   const startParts = startStr.split("/").map(Number);
-  let endParts = endStr === "Present" || !endStr ? null : endStr.split("/").map(Number);
+  const endParts = endStr === "Present" || !endStr ? null : endStr.split("/").map(Number);
 
   if (startParts.length !== 3 || startParts.some((n) => Number.isNaN(n))) return "";
 
