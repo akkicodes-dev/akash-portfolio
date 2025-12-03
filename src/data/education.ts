@@ -38,19 +38,19 @@ export const educations: EducationInterface[] = [
       {
         role: "Student Lead – CodeLite 2.0 Hackathon",
         start: "01/08/2025",
-        end: "Present",
+        end: "01/12/2025",
         description: `Lead organizer for the 'CodeLite 2.0' national-level hackathon. Spearheaded sponsorship outreach, drafted official communications, and coordinated with corporate partners to secure funding and support for the event.`,
       },
       {
         role: "Smart India Hackathon (SIH) Aspirant",
         start: "01/09/2025",
-        end: "Present",
+        end: "01/12/2025",
         description: `Evaluated and developed project proposals for SIH, specifically focusing on 'Women Safety Analytics' and 'Conversational Image Recognition Chatbots'. Worked on architectural planning and feasibility analysis for these problem statements.`,
       },
       {
         role: "Android Developer & Competitive Programmer",
         start: "01/01/2024",
-        end: "Present",
+        end: "01/12/2025",
         description: `Actively learning Kotlin and Jetpack Compose for modern Android development. Concurrently practicing competitive programming on LeetCode to strengthen data structure and algorithm skills.`,
       },
     ],
