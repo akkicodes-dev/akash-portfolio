@@ -23,7 +23,7 @@ export const experiences: ExperienceInterface[] = [
     name: "Unstop Igniters Club",
     logo: "/work/Unstop-logo-portfolio.ico",
     role: "Lead",
-    type: "Presedent",
+    type: "volunteer",
     description:
       "Leading one of the most active student tech communities in the campus with a focus on hackathons, technical events, student mentorship, and building a culture of innovation.",
     achievements: [
@@ -42,7 +42,7 @@ export const experiences: ExperienceInterface[] = [
     name: "GDG (Google Developer Group)",
     logo: "/work/gdg-logo-portfolio.jpg",
     role: "Web Dev Lead",
-    type: "Core Member",
+    type: "volunteer",
     description:
       "Guided students in understanding modern web and Android development by hosting sessions, creating learning tracks and collaborating with GDG mentors.",
     achievements: [

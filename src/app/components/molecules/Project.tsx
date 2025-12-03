@@ -4,8 +4,6 @@ import Image from "next/image";
 import AnimatedComponent from "./AnimatedComponent";
 import ProjectHeader from "../atoms/ProjectHeader";
 
-export type Category = "personal" | "freelancer" | "probono";
-
 export interface ProjectProps {
   className?: string;
   title: string;
@@ -13,7 +11,7 @@ export interface ProjectProps {
   technologies: Array<string>;
   image: string;
   link: string;
-  categories?: Array<Category>;
+  categories?: Array<string>;
 }
 
 export default function Project({
